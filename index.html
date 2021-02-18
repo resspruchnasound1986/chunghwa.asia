@@ -12,12 +12,16 @@
     }
 
     body {
-        background: #E8D08F;
+        background: linear-gradient(#E8D08F, #f72052);
         color: rgba(20, 20, 24, 0.95);
 
-        padding: 4.2rem;
         font-family: 'Yanone Kaffeesatz', monospace;
         font-size: 4.2rem;
+        margin-bottom: 12.6rem;
+    }
+
+    main {
+        padding: 4.2rem;
     }
 
     a {
@@ -50,9 +54,23 @@
     td:nth-child(odd) {
         color: rgba(20, 20, 24, 0.75);
     }
+    
+    footer {
+        text-align: center;
+        background-color: rgba(20, 20, 24, 0.98);
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+    }
+    
+    #chunghwa-logo {
+        height: 2.1rem;
+    }
     </style>
 </head>
 <body>
+    <main>
     <h1 style="text-align: center; font-size: 4.2rem; padding-bottom: 12.6rem;">The Complete Chunghwan <a href="https://twitter.com/toto_minai">Toto</a><br />@<span class="cp">toto_minai</span></h1>
     <table cellspacing="0" cellpadding="0">
         <tbody>
@@ -88,5 +106,8 @@
             </tr>
         </tbody>
     </table>
+    <main>
+    
+    <footer><p><img src="img/chunghwa.svg" id="chunghwa-logo"/></p></footer>
 </body>
 </html>
