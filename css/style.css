@@ -1,10 +1,30 @@
+:root {
+	--theme: #E8D08F;
+	--foreground-color: rgba(20, 20, 24, 0.95);
+	--forground-secondary-color: rgba(20, 20, 24, 0.75);
+	--underline-color: #72adb0;
+	--theme-gradient: linear-gradient(#E8D08F, #f72052);
+	--table-secondary-color: rgba(20, 20, 24, 0.12);
+}
+
+@media screen and (prefers-color-scheme: dark) {
+	:root {
+		--theme: #412b3d;
+		--foreground-color: rgba(224, 215, 203, 0.95);
+		--forground-secondary-color: rgba(224, 215, 203, 0.75);
+		--underline-color: #f72052;
+		--theme-gradient: linear-gradient(#412b3d, #de6716);
+		--table-secondary-color: rgba(224, 215, 203, 0.12);
+	}
+}
+
 * {
 	margin: 0;
 }
 
 body {
-	background: linear-gradient(#E8D08F, #f72052); // !
-	color: rgba(20, 20, 24, 0.95);
+	background: var(--theme-gradient);
+	color: var(--foreground-color);
 
 	padding: 4.2rem;
 	font-family: 'Yanone Kaffeesatz', monospace;
@@ -18,13 +38,13 @@ h1 {
 }
 
 a {
-	color: rgba(20, 20, 24, 0.95);
-	text-decoration-color: #72adb0;
+	color: var(--foreground-color);
+	text-decoration-color: var(--underline-color);
 	text-decoration-thickness: 0.5rem;
 }
 
 .cp {
-	color: rgba(20, 20, 24, 0.75);
+	color: var(--forground-secondary-color);
 }
 
 table {
@@ -33,7 +53,7 @@ table {
 }
 
 tr:nth-child(odd) {
-	background-color: rgba(20, 20, 24, 0.12);
+	background-color: var(--table-secondary-color);
 }
 
 td {
@@ -45,5 +65,5 @@ td:nth-child(3) {
 }
 
 td:nth-child(odd) {
-	color: rgba(20, 20, 24, 0.75);
+	color: var(--forground-secondary-color);
 }

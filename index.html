@@ -9,7 +9,7 @@
     <link rel="stylesheet" type="text/css" href="css/style.css" />
     <style type="text/css">
     body {
-        background: #E8D08F;
+        background: var(--theme);
         padding-bottom: 8.4rem;
     }
     
@@ -76,6 +76,13 @@
     </table>
     <main>
     
-    <footer><p><img src="img/chunghwa.svg" id="chunghwa-logo"/></p></footer>
+    <footer><p>
+        <picture>
+            <source srcset="img/chunghwa-dark.svg" media="(prefers-color-scheme: dark)" />
+            <img src="img/chunghwa.svg"  id="chunghwa-logo" />
+        </picture>
+        
+        <!-- <img src="img/chunghwa.svg"/></p> -->
+    </footer>
 </body>
 </html>
