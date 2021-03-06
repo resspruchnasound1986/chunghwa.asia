@@ -11,7 +11,7 @@
 	:root {
 		--theme: #412b3d;
 		--foreground-color: rgba(224, 215, 203, 0.95);
-		--forground-secondary-color: rgba(224, 215, 203, 0.75);
+		--forground-secondary-color: rgba(224, 215, 203, 0.6);
 		--underline-color: #f72052;
 		--theme-gradient: linear-gradient(#412b3d, #de6716);
 		--table-secondary-color: rgba(224, 215, 203, 0.12);
