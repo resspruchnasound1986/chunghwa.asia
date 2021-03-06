@@ -2,7 +2,7 @@
 	--theme: #E8D08F;
 	--foreground-color: rgba(20, 20, 24, 0.95);
 	--forground-secondary-color: rgba(20, 20, 24, 0.75);
-	--underline-color: #72adb0;
+	--decoration-color: #72adb0;
 	--theme-gradient: linear-gradient(#E8D08F, #f72052);
 	--table-secondary-color: rgba(20, 20, 24, 0.12);
 }
@@ -12,7 +12,7 @@
 		--theme: #412b3d;
 		--foreground-color: rgba(224, 215, 203, 0.95);
 		--forground-secondary-color: rgba(224, 215, 203, 0.6);
-		--underline-color: #f72052;
+		--decoration-color: #f72052;
 		--theme-gradient: linear-gradient(#412b3d, #de6716);
 		--table-secondary-color: rgba(224, 215, 203, 0.12);
 	}
@@ -39,12 +39,19 @@ h1 {
 
 a {
 	color: var(--foreground-color);
-	text-decoration-color: var(--underline-color);
+	text-decoration-color: var(--decoration-color);
 	text-decoration-thickness: 0.5rem;
 }
 
 .cp {
 	color: var(--forground-secondary-color);
+}
+
+.not-yet {
+	text-decoration: line-through;
+	text-decoration-style: wavy;
+	text-decoration-color: var(--decoration-color);
+	text-decoration-thickness: 0.5rem;
 }
 
 table {
