@@ -1,0 +1,49 @@
+* {
+	margin: 0;
+}
+
+body {
+	background: linear-gradient(#E8D08F, #f72052); // !
+	color: rgba(20, 20, 24, 0.95);
+
+	padding: 4.2rem;
+	font-family: 'Yanone Kaffeesatz', monospace;
+	font-size: 4.2rem;
+}
+
+h1 {
+	text-align: center;
+	font-size: 4.2rem;
+	padding-bottom: 12.6rem;
+}
+
+a {
+	color: rgba(20, 20, 24, 0.95);
+	text-decoration-color: #72adb0;
+	text-decoration-thickness: 0.5rem;
+}
+
+.cp {
+	color: rgba(20, 20, 24, 0.75);
+}
+
+table {
+	width: 100%;
+	border: none;
+}
+
+tr:nth-child(odd) {
+	background-color: rgba(20, 20, 24, 0.12);
+}
+
+td {
+	padding: 0.6rem 0.6rem 0.2rem;
+}
+
+td:nth-child(3) {
+	text-align: right;
+}
+
+td:nth-child(odd) {
+	color: rgba(20, 20, 24, 0.75);
+}
