@@ -3,7 +3,7 @@
 	--foreground-color: rgba(20, 20, 24, 0.95);
 	--forground-secondary-color: rgba(20, 20, 24, 0.75);
 	--decoration-color: #72adb0;
-	--theme-gradient: linear-gradient(#E8D08F, #f72052);
+	--theme-gradient: linear-gradient(#e8d08f, #eabf78, #edad64, #f19955, #f4834c, #f76a49, #f84d4b, #f72052);
 	--table-secondary-color: rgba(20, 20, 24, 0.12);
 }
 
@@ -13,7 +13,7 @@
 		--foreground-color: rgba(224, 215, 203, 0.95);
 		--forground-secondary-color: rgba(224, 215, 203, 0.6);
 		--decoration-color: #f72052;
-		--theme-gradient: linear-gradient(#412b3d, #de6716);
+		--theme-gradient: linear-gradient(#412b3d, #5a3048, #76334e, #91364f, #ab3c4a, #c14540, #d25430, #de6716);
 		--table-secondary-color: rgba(224, 215, 203, 0.12);
 	}
 }
