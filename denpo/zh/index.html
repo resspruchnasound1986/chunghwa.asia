@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="zh-hant" prefix="og: http://ogp.me/ns#">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+	<title>Denpo</title>
+	<link href="https://fonts.googleapis.com/css?family=Acme&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Noto+Sans+TC:400,700|Noto+Serif+TC:900&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+	<link href="https://fonts.googleapis.com/css?family=Inria+Sans:400,700&display=swap" rel="stylesheet">
+	<meta name="twitter:card" content="summary" />
+	<meta name="twitter:site" content="@bufhdy" />
+	<meta name="twitter:creator" content="@bufhdy" />
+	<meta name="description" content="Denpo 是一個將本地 Markdown 文檔發佈到 Telegraph 的軟體。">
+	<meta name="og:description" content="Denpo 是一個將本地 Markdown 文檔發佈到 Telegraph 的軟體。">
+	<meta name="og:title" content="Denpo">
+	<meta name="og:url" content="https://denpo.org">
+	<meta name="og:image" content="https://denpo.org/img/cover.png">
+
+	<link rel="icon" href="../img/favicon.png" type="image/png">
+	<link rel="apple-touch-icon" href="../img/apple-icon.png">
+
+	<script src="https://gumroad.com/js/gumroad.js"></script>
+
+	<style type="text/css">
+		:root {
+			--background-color: #EFEDE9;
+			--foreground-color: #3C2A27;
+			--code-color: #65A4B6;
+			--gradient-color: #E8D08F;
+			--gradient: linear-gradient(90deg, rgba(239,237,233,1) 0%, rgba(232,208,143,1) 100%);
+			--gradient-reversed: linear-gradient(270deg, rgba(239,237,233,1) 0%, rgba(232,208,143,1) 100%);
+		}
+
+		@media screen and (prefers-color-scheme: dark) {
+			:root {
+				--background-color: #131313;
+				--foreground-color: #E8D08F;
+				--code-color: #65A4B6;
+				--gradient-color: #575950;
+				--gradient: linear-gradient(90deg, rgba(19,19,19,1) 0%, rgba(87,89,80,1) 100%);
+				--gradient-reversed: linear-gradient(270deg, rgba(19,19,19,1) 0%, rgba(87,89,80,1) 100%);
+			}
+		}
+
+		body {
+			background-color: var(--background-color);
+			writing-mode: vertical-rl;
+			overflow-y: hidden;
+            line-height: 1.6;
+            -webkit-hyphens: auto;
+            -ms-hyphens: auto;
+            hyphens: auto;   
+		}
+
+		code {
+			color: var(--code-color);
+		}
+
+		.cus_link {
+			color: var(--foreground-color);
+			text-decoration: underline;
+			text-decoration-color: #7CCBE1;
+		}
+		.cus_link:hover {
+			color: var(--foreground-color);
+			text-decoration: none;
+			background: #7CCBE1;
+		}
+
+		.sans-serif-text {
+			font-family: 'Inria Sans', 'Noto Sans TC', sans-serif;
+		}
+	</style>
+</head>
+<!-- #E8D08F -->
+<body style="font-family: 'Acme', 'Noto Serif TC', serif; color: var(--foreground-color); font-size: 17px">
+	<div class="container">
+        <div style="padding: 116px 0 116px 0">
+		<div style="text-align: center; writing-mode: horizontal-tb; width: 100vw; max-width: 440px; display: inline-block; align-items: center;">
+			<p>
+				<img src="../img/icon.png" alt="Denpo Cookbook" width="180px" />
+			</p>
+			<h1>Denpo</h1>
+			<p class="sans-serif-text">用 Markdown 寫 <a class="cus_link" href="https://telegra.ph">Telegraph</a> 文章</p>
+			<p><a class="gumroad-button cus_link" href="https://gum.co/fIipFW" target="_blank">贊助 Denpo</a></p>
+		</div>
+
+		<br />
+
+		<div id="overview">
+			<h3>綜覽</h3>
+			<p class="sans-serif-text">Denpo 是一個將本地 Markdown 文檔發佈到 Telegraph 的軟體。Telegraph 不識 Markdown 也對一些ＨＴＭＬ元素支援不完全（例如 <code>&lt;code&gt;</code>。無奈 Telegraph <strong>無法</strong>顯示 <code>&lt;h1&gt;</code> 與 <code>&lt;h2&gt;</code>）。此外，Denpo 亦提供類似於 <a class="cus_link" href="https://tinyurl.com">TinyURL</a> 這樣的短鏈接服務，以及，通過 <a class="cus_link" href="https://workers.cloudflare.com">Cloudflare Workers</a> 的重定向（需要您手動搭建，<a class="cus_link" href="https://github.com/Siujoeng-Lau/Workers-Proxy">如何？</a>）。其後能夠跳脫來自 <span class="tcy">ISP</span>、學校和政府的內容審查。無料。</p>
+		</div>
+
+		<br />
+
+		<div id="download">
+			<h3>軟體下載</h3>
+			<ul class="sans-serif-text"><li>（二〇二〇年四月十日，beta 0.2 build 1）要求 macOS 10.15 或更高的系統版本。<strong><a class="cus_link" href="../download/Denpo_0_2_b_2.dmg">點擊此處</a></strong>以下載。</li></ul>
+		</div>
+
+		<br />
+
+		<div id="markdown-support">
+			<h3>Markdown 支援</h3>
+			<div class="sans-serif-text row">
+				<div class="col">
+					<p>Denpo 支援：</p>
+					<ul>
+						<li>作為標題的 <code>&lt;h1&gt;</code></li>
+						<li>基礎：<code>&lt;h3&gt;</code>、<code>&lt;h4&gt;</code>、<code>&lt;em&gt;</code>、<code>&lt;strong&gt;</code>、<code>&lt;code&gt;</code></li>
+						<li>鏈接：<code>&lt;a&gt;</code></li>
+						<li>引用：<code>&lt;blockquote&gt;</code></li>
+					</ul>
+				</div>
+				<div class="col">
+					<p>將<strong>不會</strong>支援：</p>
+					<ul>
+						<li><code>&lt;h1&gt;</code>、<code>&lt;h2&gt;</code></li>
+						<li>清單</li>
+						<li>表單</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+
+		<br />
+
+		<div id="screenshots">
+			<h3>介面展示</h3>
+			<p style="text-align: center;">
+				<picture>
+					<source srcset="../img/screen-shot-1-dark.png" media="(prefers-color-scheme: dark)" alt="Screen Shot 1">
+					<img src="../img/screen-shot-1.png" alt="Screen Shot 1" height="45%" style="max-height: 360px" />
+				</picture>
+
+				<picture>
+					<source srcset="../img/screen-shot-2-dark.png" media="(prefers-color-scheme: dark)" alt="Screen Shot 1">
+					<img src="../img/screen-shot-2.png" alt="Screen Shot 1" height="45%" style="max-height: 360px" />
+				</picture>
+			</p>
+		</div>
+
+		<br />
+
+		<div id="credits">
+			<h3>鳴謝</h3>
+			<ul class="sans-serif-text">
+				<li>字庫：<a class="cus_link" href="https://huertatipografica.com/en">Huerta Tipográfica</a> 的 <a class="cus_link" style="font-family: 'Acme';" href="https://fonts.google.com/specimen/Acme">Acme</a>、<a class="cus_link" href="https://github.com/BlackFoundryCom/InriaFonts">Inria Sans</a>，以及<span style="font-family: 'Noto Serif TC';">思源宋體</span>與思源黑體。</li>
+				<li>介面標識：源於 <a class="cus_link" href="https://robbiepearce.com">Robbie Pearce</a> 的 <a class="cus_link" href="https://robbiepearce.com/softies/">Softies</a> 圖示冊。</li>
+			</ul>
+		</div>
+
+		</div>
+
+	    <div style="width: 120px; background: var(--gradient-color); background: var(--gradient-reversed);"></div>
+	</div>
+
+
+	<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+</body>
+</html>

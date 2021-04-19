@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en" prefix="og: http://ogp.me/ns#">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+	<title>Denpo</title>
+	<link href="https://fonts.googleapis.com/css?family=Acme&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+	<link href="https://fonts.googleapis.com/css?family=Inria+Sans:400,700&display=swap" rel="stylesheet">
+	<meta name="twitter:card" content="summary" />
+	<meta name="twitter:site" content="@bufhdy" />
+	<meta name="twitter:creator" content="@bufhdy" />
+	<meta name="description" content="Denpo allows you to upload your local Markdown files to Telegraph.">
+	<meta name="og:description" content="Denpo allows you to upload your local Markdown files to Telegraph.">
+	<meta name="og:title" content="Denpo">
+	<meta name="og:url" content="https://denpo.org">
+	<meta name="og:image" content="https://denpo.org/img/cover.png">
+
+	<link rel="icon" href="img/favicon.png" type="image/png">
+	<link rel="apple-touch-icon" href="img/apple-icon.png">
+
+	<script src="https://gumroad.com/js/gumroad.js"></script>
+
+	<style type="text/css">
+		:root {
+			--background-color: #EFEDE9;
+			--foreground-color: #3C2A27;
+			--code-color: #65A4B6;
+			--gradient-color: #E8D08F;
+			--gradient: linear-gradient(0deg, rgba(239,237,233,1) 0%, rgba(232,208,143,1) 100%);
+			--gradient-reversed: linear-gradient(180deg, rgba(239,237,233,1) 0%, rgba(232,208,143,1) 100%);
+		}
+
+		@media screen and (prefers-color-scheme: dark) {
+			:root {
+				--background-color: #131313;
+				--foreground-color: #E8D08F;
+				--code-color: #65A4B6;
+				--gradient-color: #575950;
+				--gradient: linear-gradient(0deg, rgba(19,19,19,1) 0%, rgba(87,89,80,1) 100%);
+				--gradient-reversed: linear-gradient(180deg, rgba(19,19,19,1) 0%, rgba(87,89,80,1) 100%);
+			}
+		}
+
+		body {
+			background-color: var(--background-color);
+			-webkit-hyphens: auto;
+			-ms-hyphens: auto;
+			hyphens: auto;
+		}
+
+		code {
+			color: var(--code-color);
+		}
+
+		.cus_link {
+			color: var(--foreground-color);
+			text-decoration: underline;
+			text-decoration-color: #7CCBE1;
+		}
+		.cus_link:hover {
+			color: var(--foreground-color);
+			text-decoration: none;
+			background: #7CCBE1;
+		}
+
+		.sans-serif-text {
+			font-family: 'Inria Sans', sans-serif;
+		}
+	</style>
+</head>
+<!-- #E8D08F -->
+<body style="font-family: 'Acme', serif; color: var(--foreground-color); font-size: 17px">
+	<div style="height: 120px; background: var(--gradient-color); background: var(--gradient);"></div>
+	<div style="padding: 16px 0; margin-top: -66px;"  class="container">
+		<div style="text-align: center;">
+			<p>
+				<img src="img/icon.png" alt="Denpo Cookbook" width="180px" />
+			</p>
+			<h1>Denpo</h1>
+			<p class="sans-serif-text">Write <a class="cus_link" href="https://telegra.ph">Telegraph</a> with Markdown</p>
+			<p><a class="gumroad-button cus_link" href="https://gum.co/fIipFW" target="_blank">Become a Sponsor</a></p>
+		</div>
+
+		<br />
+
+		<div id="overview">
+			<h3>Overview</h3>
+			<p class="sans-serif-text">Denpo allows you to upload your local Markdown files to Telegraph which has got no idea how to deal with it and even has limitation of some HTML elements (<code>&lt;code&gt;</code>, etc.. Unfortunately, Telegraph <strong>cannot</strong> display <code>&lt;h1&gt;</code> or <code>&lt;h2&gt;</code>). Besides, Denpo provides short link services like <a class="cus_link" href="https://tinyurl.com">TinyURL</a> and redirection through <a class="cus_link" href="https://workers.cloudflare.com">Cloudflare Workers</a> (you may set up yourself, <a class="cus_link" href="https://github.com/Siujoeng-Lau/Workers-Proxy">how to?</a>) that enables you to share links to people under surveillance from their <span style="font-variant: small-caps;">ISP</span>, school, and government. And it’s free.</p>
+		</div>
+
+		<br />
+
+		<div id="download">
+			<h3>Download</h3>
+			<ul class="sans-serif-text"><li>(10 Apr 2020, beta 0.2 build 2) Require macOS 10.15 or higher. <strong><a class="cus_link" href="download/Denpo_0_2_b_2.dmg">Click here</a></strong> to download.</li></ul>
+		</div>
+
+		<br />
+
+		<div id="markdown-support">
+			<h3>Markdown Supports</h3>
+			<div class="sans-serif-text row">
+				<div class="col">
+					<p>Denpo supports:</p>
+					<ul>
+						<li><code>&lt;h1&gt;</code> as headline</li>
+						<li>Basic: <code>&lt;h3&gt;</code>, <code>&lt;h4&gt;</code>, <code>&lt;em&gt;</code>, <code>&lt;strong&gt;</code>, <code>&lt;code&gt;</code></li>
+						<li>Link: <code>&lt;a&gt;</code></li>
+						<li>Quote: <code>&lt;blockquote&gt;</code></li>
+					</ul>
+				</div>
+				<div class="col">
+					<p><strong>Not</strong> supports now and in the future:</p>
+					<ul>
+						<li><code>&lt;h1&gt;</code>, <code>&lt;h2&gt;</code></li>
+						<li>To-do lists</li>
+						<li>Tables</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+
+		<br />
+
+		<div id="screenshots">
+			<h3>Screenshots</h3>
+			<p style="text-align: center;">
+				<picture>
+					<source srcset="img/screen-shot-1-dark.png" media="(prefers-color-scheme: dark)" alt="Screen Shot 1">
+					<img src="img/screen-shot-1.png" alt="Screen Shot 1" width="100%" style="max-width: 480px" />
+				</picture>
+
+				<picture>
+					<source srcset="img/screen-shot-2-dark.png" media="(prefers-color-scheme: dark)" alt="Screen Shot 1">
+					<img src="img/screen-shot-2.png" alt="Screen Shot 1" width="100%" style="max-width: 480px" />
+				</picture>
+			</p>
+		</div>
+
+		<br />
+
+		<div id="credits">
+			<h3>Credits</h3>
+			<ul class="sans-serif-text">
+				<li>Typeface: <a class="cus_link" style="font-family: 'Acme', serif;" href="https://fonts.google.com/specimen/Acme">Acme</a> by <a class="cus_link" href="https://huertatipografica.com/en">Huerta Tipográfica</a> and <a class="cus_link" href="https://github.com/BlackFoundryCom/InriaFonts">Inria Sans</a>.</li>
+				<li>UI icons: Based on <a class="cus_link" href="https://robbiepearce.com/softies/">Softies</a> by <a class="cus_link" href="https://robbiepearce.com">Robbie Pearce</a>.</li>
+			</ul>
+		</div>
+
+		<br />
+	</div>
+
+	<div style="height: 120px; background: var(--gradient-color); background: var(--gradient-reversed);"></div>
+
+	<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+</body>
+</html>
