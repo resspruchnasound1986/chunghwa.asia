@@ -86,7 +86,7 @@ a {
 
 .banner_vertical {
     position: fixed;
-    padding: 1.2rem;
+    padding: 0 1.2rem;
     height: 100vh;
 
     background: white;
@@ -100,7 +100,7 @@ a {
 
 .banner_horizontal {
     position: fixed;
-    padding: 1.2rem;
+    padding: 1.2rem 0;
     width: 100vw;
     
     background: white;
