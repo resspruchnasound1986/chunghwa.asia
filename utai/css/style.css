@@ -1,5 +1,10 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
 body {
-    background: linear-gradient(#e8d08f, #eabf78, #edad64, #f19955, #f4834c, #f76a49, #f84d4b, #f72052);
+    background: linear-gradient(0deg, #a2c1d8, #95c8d9, #8dced3, #8ed3c7, #9bd6b6, #b0d6a5, #cbd496, #e8d08f);
     user-select: none;
     -moz-user-select: none;
     -webkit-user-select: none;
@@ -8,6 +13,12 @@ body {
 
     display: flex;
     min-height: 100vh;
+}
+
+a {
+    color: black;
+    text-decoration-color: #72adb0;
+    text-decoration-thickness: 0.2rem;
 }
 
 .inner_page_2 {
@@ -71,4 +82,31 @@ body {
 
 .screenshot_page_3_img {
     margin-top: -0.5px;
+}
+
+.banner_vertical {
+    position: fixed;
+    padding: 1.2rem;
+    height: 100vh;
+
+    background: white;
+
+    writing-mode: vertical-rl;
+    font-family: 'Noto Sans JP', sans-serif;
+    text-align: center;
+
+    z-index: 10;
+}
+
+.banner_horizontal {
+    position: fixed;
+    padding: 1.2rem;
+    width: 100vw;
+    
+    background: white;
+    
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    text-align: center;
+
+    z-index: 10;
 }
