@@ -24,20 +24,20 @@ class DraggableScreenshot {
         this.yTranslate = y - this.yStart
     }
 
-    constructor(main, borderd, x, y) {
+    constructor(main, outter, x, y) {
         this.uuid = uuid()
 
         this.main = main
-        this.borderd = borderd
-        this.x = x  // (Math.random()-0.5) * 156
-        this.y = y  // Math.random() * 156
-        setTranslate(this.x, this.y, this.borderd)
+        this.outter = outter
+        this.x = x
+        this.y = y
+        setTranslate(this.x, this.y, this.outter)
     }
 }
 
 
 let body = document.getElementsByTagName("body")[0]
-let bordereds = document.getElementsByClassName("bordered")
+let bordereds = document.getElementsByClassName("outter")
 
 let uuids = []
 let screenshots = []
@@ -116,8 +116,15 @@ function drag(e) {
     if (activeScreenshot == null) { return }
 
     screenshots.forEach(screenshot => {
-        let zIndex = parseInt(uuids.indexOf(screenshot.uuid) + 1)
-        screenshot.borderd.style.zIndex = zIndex.toString()
+        let index = uuids.indexOf(screenshot.uuid)
+        let zIndex = parseInt(index + 1)
+        screenshot.outter.style.zIndex = zIndex.toString()
+        if (index == uuids.length-1) {
+            console.log('top')
+            screenshot.outter.style.boxShadow = '0 16px 40px rgba(0, 0, 0, 0.72)'
+        } else {
+            screenshot.outter.style.boxShadow = '0 16px 40px rgba(0, 0, 0, 0.45)'
+        }
     })
 
     if (e.type === "touchstart") {
@@ -147,7 +154,7 @@ function move(e) {
 
         setTranslate(activeScreenshot.x + activeScreenshot.xTranslate, 
                      activeScreenshot.y + activeScreenshot.yTranslate, 
-                     activeScreenshot.borderd)
+                     activeScreenshot.outter)
     }
 }
 

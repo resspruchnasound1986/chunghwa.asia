@@ -39,7 +39,6 @@ a {
     width: 312px;
 
     background: rgba(20, 20, 20, 0.60);
-    box-shadow: 0 16px 40px rgba(0, 0, 0, 0.72); 
     backdrop-filter: blur(30px);
     -webkit-backdrop-filter: blur(30px);
     
@@ -62,6 +61,8 @@ a {
 
     border: 0.5px solid black;
     border-radius: 12.3px;
+
+    box-shadow: 0 16px 40px rgba(0, 0, 0, 0.45); 
 }
 
 .outter_page_2 {
