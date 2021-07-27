@@ -69,29 +69,27 @@ a {
     height: 314px;
 }
 
-.banner_vertical {
+.banner {
     position: fixed;
-    padding: 0 1.2rem;
-    height: 100vh;
 
     background: white;
 
-    writing-mode: vertical-rl;
-    font-family: 'Noto Sans JP', sans-serif;
     text-align: center;
 
     z-index: 10;
 }
 
+.banner_vertical {
+    padding: 0 1.2rem;
+    height: 100vh;
+
+    writing-mode: vertical-rl;
+    font-family: 'Noto Sans JP', sans-serif;
+}
+
 .banner_horizontal {
-    position: fixed;
     padding: 1.2rem 0;
     width: 100vw;
     
-    background: white;
-    
     font-family: 'Yanone Kaffeesatz', sans-serif;
-    text-align: center;
-
-    z-index: 10;
 }
