@@ -12,11 +12,14 @@ class DraggableScreenshot {
         this.xStart = x
         this.yStart = y
         this.isActive = true
+        this.hasMoved = false
     }
 
     didDrop() {
-        this.x += this.xTranslate
-        this.y += this.yTranslate
+        if (this.hasMoved) {
+            this.x += this.xTranslate
+            this.y += this.yTranslate
+        }
     }
 
     translate(x, y) {
@@ -25,6 +28,7 @@ class DraggableScreenshot {
     }
 
     constructor(main, outter, x, y) {
+        this.hasMoved = false
         this.uuid = uuid()
 
         this.main = main
@@ -63,7 +67,7 @@ window.onload = function() {
         // Set size
         let height = main.height
         if (bordered.classList.contains("outter_page_3")) {
-            bordered.style.height = (height+2).toString() + "px"
+            bordered.style.height = (height+1.6).toString() + "px"
         }
 
         let inner = bordered.querySelector(".inner_page_3")
@@ -120,10 +124,9 @@ function drag(e) {
         let zIndex = parseInt(index + 1)
         screenshot.outter.style.zIndex = zIndex.toString()
         if (index == uuids.length-1) {
-            console.log('top')
             screenshot.outter.style.boxShadow = '0 16px 40px rgba(0, 0, 0, 0.72)'
         } else {
-            screenshot.outter.style.boxShadow = '0 16px 40px rgba(0, 0, 0, 0.45)'
+            screenshot.outter.style.boxShadow = '0 8px 20px rgba(0, 0, 0, 0.36)'
         }
     })
 
@@ -146,6 +149,8 @@ function drop(e) {
 
 function move(e) {
     if (activeScreenshot != null) {
+        activeScreenshot.hasMoved = true
+
         if (e.type === "touchmove") {
             activeScreenshot.translate(e.touches[0].clientX, e.touches[0].clientY)
         } else {
