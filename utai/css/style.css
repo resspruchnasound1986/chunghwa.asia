@@ -4,6 +4,8 @@
 }
 
 body {
+    opacity: 0;
+
     background: linear-gradient(0deg, #a2c1d8, #95c8d9, #8dced3, #8ed3c7, #9bd6b6, #b0d6a5, #cbd496, #e8d08f);
     user-select: none;
     -moz-user-select: none;

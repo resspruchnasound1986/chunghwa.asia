@@ -1,4 +1,4 @@
-304<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en-gb">
 <head>
     <meta charset="utf-8" />
@@ -6,61 +6,44 @@
     <title>Utai</title>
 
     <link rel="stylesheet" type="text/css" href="css/style.css" />
-<link rel="preconnect" href="https://fonts.googleapis.com"> 
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
-<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@900&family=Yanone+Kaffeesatz:wght@700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" /> 
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin /> 
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@900&family=Yanone+Kaffeesatz:wght@700&display=swap" rel="stylesheet" />
+
+    <script src="https://unpkg.com/vue@next"></script>
 </head>
-<body unselectable="on">
-    <script type="text/javascript">
-        document.getElementsByTagName("body")[0].style.opacity = '0'
-    </script>
-    <div class="outter_page_3 outter">
-        <div class="inner_page_3 inner"> 
-            <img src="screenshots/screenshot_page_3_1.png" class="screenshot_page_3_img screenshot item" />
-        </div>
+<body>
+    <page-3-window v-for="url in page3ScreenshotURLs"
+                   v-bind:url="url"
+                   v-bind:key="url.id"></page-3-window>
+    <page-2-window v-for="url in page2ScreenshotURLs"
+                   v-bind:url="url"
+                   v-bind:key="url.id"></page-2-window>
+
+    <div class="banner_horizontal banner" style="bottom: 0;">
+        <p>
+            <a href="https://github.com/toto-minai/Utai/releases/download/v0.1_5/Utai.app.zip">
+                Download Latest
+            </a> (0.1 Build 5, requires macOS 12 Monterey Beta 3+) / 
+            <a href="https://github.com/toto-minai/Utai/releases/download/v0.1_4/Utai.app.zip">
+                Download Legacy
+            </a> (Build 4) / 
+            <a href="https://github.com/toto-minai/utai">View Source</a>
+        </p>
     </div>
-    <div class="outter_page_3 outter">
-        <div class="inner_page_3 inner"> 
-            <img src="screenshots/screenshot_page_3_2.png" class="screenshot_page_3_img screenshot item" />
-        </div>
+    <div class="banner_horizontal banner" style="top: 0;">
+        <p>Mini-Functional, Offensive, MP3 Tagger for Philharmoniques</p>
     </div>
-    <div class="outter_page_3 outter">
-        <div class="inner_page_3 inner"> 
-            <img src="screenshots/screenshot_page_3_3.png" class="screenshot_page_3_img screenshot item" />
-        </div>
-    </div>
-    <div class="outter_page_2 outter">
-        <div class="inner_page_2 inner"> 
-            <img src="screenshots/screenshot_page_2_1.png" class="screenshot_page_2_img screenshot item" />
-        </div>
-    </div>
-    <div class="outter_page_2 outter">
-        <div class="inner_page_2 inner"> 
-            <img src="screenshots/screenshot_page_2_2.png" class="screenshot_page_2_img screenshot item" />
-        </div>
-    </div>
-    <div class="outter_page_2 outter">
-        <div class="inner_page_2 inner"> 
-            <img src="screenshots/screenshot_page_2_4.png" class="screenshot_page_2_img screenshot item" />
-        </div>
-    </div>
-    <script type="text/javascript" src="js/draggable_screenshot.js"></script>
 
     <div class="banner_vertical banner" style="left: 0;" lang="ja">
         <p>　</p>
-    </div>
-
-    <div class="banner_horizontal banner" style="bottom: 0;" lang="ja">
-        <p><a href="https://github.com/toto-minai/Utai/releases/download/v0.1_5/Utai.app.zip">Download Latest</a> (0.1 Build 5, requires macOS 12 Monterey Beta 3+) / <a href="https://github.com/toto-minai/Utai/releases/download/v0.1_4/Utai.app.zip">Download Legacy</a> (Build 4) / <a href="https://github.com/toto-minai/utai">View Source</a></p>
     </div>
 
     <div class="banner_vertical banner" style="right: 0;" lang="ja">
         <p>　</p>
     </div>
 
-    <div class="banner_horizontal banner" style="top: 0;" lang="ja">
-        <p>Mini-Functional, Offensive, MP3 Tagger for Philharmoniques</p>
-    </div>
-
+    <script type="application/javascript" src="js/main.js"></script>
+    <script type="text/javascript" src="js/draggable_screenshot.js"></script>
 </body>
 </html>
