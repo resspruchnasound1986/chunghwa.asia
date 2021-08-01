@@ -14,13 +14,13 @@
 </head>
 <body>
     <page-3-window v-for="url in screenshot.page3ScreenshotURLs"
-                   v-bind:url="url"
-                   v-bind:key="url.id"></page-3-window>
+                   :src="url"
+                   :key="url.id"></page-3-window>
     <page-2-window v-for="url in screenshot.page2ScreenshotURLs"
-                   v-bind:url="url"
-                   v-bind:key="url.id"></page-2-window>
-
-    <download v-bind:latest="download.latest" v-bind:legacy="download.legacy"></download>
+                   :src="url"
+                   :key="url.id"></page-2-window>
+    <download :latest="download.latest"
+              :legacy="download.legacy"></download>
 
     <div class="banner_horizontal banner" style="top: 0;">
         <p>Mini-Functional, Offensive, MP3 Tagger for Philharmoniques</p>
@@ -34,7 +34,7 @@
         <p>　</p>
     </div>
 
-    <script src="js/main.js"></script>
+    <script src="js/app.js"></script>
     <script src="js/draggable_screenshot.js"></script>
 </body>
 </html>

@@ -27,28 +27,28 @@ const Desktop = {
 	}
 }
 
-const desktop = Vue.createApp(Desktop)
-desktop.component('page-3-window', {
-	props: ['url'],
+const app = Vue.createApp(Desktop)
+app.component('page-3-window', {
+	props: ['src'],
 	template: `
 <div class="outter_page_3 outter">
     <div class="inner_page_3 inner">
-        <img v-bind:src="url" class="screenshot_page_3_img screenshot item" />
+        <img v-bind:src="src" class="screenshot_page_3_img screenshot item" />
     </div>
 </div>
 `
 })
-desktop.component('page-2-window', {
-	props: ['url'],
+app.component('page-2-window', {
+	props: ['src'],
 	template: `
 <div class="outter_page_2 outter">
     <div class="inner_page_2 inner"> 
-        <img v-bind:src="url" class="screenshot_page_2_img screenshot item" />
+        <img v-bind:src="src" class="screenshot_page_2_img screenshot item" />
     </div>
 </div>
 `
 })
-desktop.component('download', {
+app.component('download', {
 	props: ['latest', 'legacy'],
 	template: `
 <div class="banner_horizontal banner" style="bottom: 0;">
@@ -64,4 +64,4 @@ desktop.component('download', {
 </div>
 	`
 })
-desktop.mount('body')
+app.mount('body')
