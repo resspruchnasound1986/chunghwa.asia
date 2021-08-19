@@ -57,6 +57,7 @@ a {
 table {
 	width: 100%;
 	border: none;
+    font-size: 4.2rem;
 }
 
 tr:nth-child(odd) {
