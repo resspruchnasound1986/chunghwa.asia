@@ -23,7 +23,7 @@
 }
 
 body {
-	background: var(--theme-gradient);
+	background: var(--theme);
 	color: var(--foreground-color);
 
 	padding: 4.2rem;
@@ -58,14 +58,24 @@ table {
 	width: 100%;
 	border: none;
     font-size: 4.2rem;
+	border-collapse: separate;
 }
 
 tr:nth-child(odd) {
 	background-color: var(--table-secondary-color);
 }
 
+td:first-child {
+	border-radius: .6rem 0 0 .6rem;
+}
+
+td:last-child {
+	border-radius: 0 .6rem .6rem 0;
+}
+
 td {
-	padding: 0.6rem 0.6rem 0.2rem;
+	height: 4.9rem;
+	padding: 0.2rem 0.6rem 0rem;
 }
 
 td:nth-child(3) {
