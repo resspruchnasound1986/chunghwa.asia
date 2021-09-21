@@ -78,7 +78,7 @@
 1980,Cruising,William Friedkin,NULL,NULL,0,NULL,0,NULL
 1995,Fallen Angels,Wong Kar-wai [王家衛],Wong Kar-Wai [王家衛],NULL,0,墮落天使,0,NULL
 1977,Annie Hall,Woody Allen,"Woody Allen, Marshall Brickman","Woody Allen, Diane Keaton",0,NULL,0,NULL
-1995,La cérémonie,Claude Chabrol,"Ruth Rendell (novel), Claude Chabrol, Caroline Eliacheff","Sandrine Bonnaire, Isabelle Huppert, Virginie Ledoyen",0,NULL,0,NULL
+1995,La cérémonie,Claude Chabrol,"Ruth Rendell (novel), Claude Chabrol, Caroline Eliacheff","Sandrine Bonnaire, Isabelle Huppert, Virginie Ledoyen, Jacqueline Bisset",0,NULL,0,NULL
 1962,Lolita,Stanley Kubrick,Vladimir Nabokov,"James Mason, Sue Lyon",0,NULL,0,NULL
 1990,Metropolitan,Whit Stillman,Whit Stillman,"Carolyn Farina, Chris Eigeman, Taylor Nichols",0,NULL,0,Roman Shaded D
 1975,Four Women,Julie Dash,NULL,Linda Martina Young,0,NULL,1,NULL
@@ -89,7 +89,7 @@
 1967,La collectionneuse,Éric Rohmer,"Patrick Bauchau, Haydée Politoff, Daniel Pommereulle, Éric Rohmer","Patrick Bauchau, Haydée Politoff",0,NULL,0,NULL
 1959,Hiroshima mon amour,Alain Resnais,Marguerite Duras,"Emmanuelle Riva, Eiji Okada [岡田 英次]",0,NULL,0,NULL
 1965,Pleasures of the Flesh,Nagisa Ōshima [大島 渚],"Nagisa Ōshima [大島 渚], Fūtarō Yamada [山田 風太郎] ","Katsuo Nakamura [中村 嘉葎雄], Mariko Kaga [加賀 まりこ]",0,悦楽,0,NULL
-1972,The Discreet Charm of the Bourgeoisie,Luis Buñuel,"Luis Buñuel, Jean-Claude Carrière","Fernando Rey, Bulle Ogier, Milena Vukotic",0,Le charme discret de la bourgeoisie,1,Cooper Black Italic
+1972,The Discreet Charm of the Bourgeoisie,Luis Buñuel,"Luis Buñuel, Jean-Claude Carrière","Fernando Rey, Bulle Ogier, Milena Vukotic",0,Le charme discret de la bourgeoisie,0,Cooper Black Italic
 1980,A Week’s Vacation,Bertrand Tavernier,"Marie-Françoise Hans, Bertrand Tavernier, Colo Tavernier","Nathalie Baye, Flore Fitzgerald",0,Une semaine de vacances,0,Windsor UltraHeavy
 1984,A Sunday in the Country,Bertrand Tavernier,"Pierre Bost (novel), Bertrand Tavernier, Colo Tavernier","Sabine Azéma, Michel Aumont",0,Un dimanche à la campagne,0,Bookman Demi Bold Italic
 1980,Every Man for Himself,Jean-Luc Godard,"Anne-Marie Miéville, Jean-Claude Carrière","Isabelle Huppert, Jacques Dutronc, Nathalie Baye",0,Sauve qui peut (la vie),0,NULL
@@ -122,3 +122,10 @@
 1991,Europa,Lars von Trier,"Lars von Trier, Niels Vørsel","Jean-Marc Barr, Barbara Sukowa",0,NULL,0,NULL
 1964,The Diary of a Chambermaid,Luis Buñuel,"Octave Mirbeau (novel), Luis Buñuel, Jean-Claude Carrière","Jeanne Moreau, Georges Géret",0,Le journal d'une femme de chambre,0,NULL
 1969,Funeral Parade of Roses,Toshio Matsumoto [松本 俊夫],Toshio Matsumoto [松本 俊夫],Peter [ピーター],0,薔薇の葬列,0,NULL
+1973,Day for Night,François Truffaut,"François Truffaut, Jean-Louis Richard, Suzanne Schiffman","Jacqueline Bisset, Jean-Pierre Léaud, François Truffaut, Nathalie Baye, Jean-Pierre Aumont",0,La nuit américaine,0,NULL
+2002,Teknolust,Lynn Hershman-Leeson,Lynn Hershman-Leeson,Tilda Swinton,0,NULL,0,NULL
+2012,Like Someone in Love,Abbas Kiarostami,Abbas Kiarostami,"Tadashi Okuno [奥野 匡], Rin Takanashi [高梨 臨], Ryō Kase [加瀬 亮]",0,NULL,0,NULL
+1997,Conceiving Ada,Lynn Hershman-Leeson,"Lynn Hershman-Leeson, Eileen Jones, Sadie Plant","Tilda Swinton, Karen Black, John Perry Barlow",0,NULL,0,NULL
+2007,Strange Culture,Lynn Hershman-Leeson,Lynn Hershman-Leeson,"Thomas Jay Ryan, Tilda Swinton, Steve Kurtz",0,NULL,0,NULL
+1983,Variety,Bette Gordon,"Kathy Acker, Bette Gordon, Jerry Delamater",Sandy McLeod,0,NULL,0,NULL
+1987,Moonstruck,Norman Jewison,John Patrick Shanley,"Cher, Nicolas Cage, Vincent Gardenia, Olympia Dukakis",0,NULL,0,NULL
