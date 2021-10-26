@@ -15,12 +15,12 @@ const Desktop = {
 			},
 			download: {
 				latest: {
-					url: "https://github.com/toto-minai/Utai/releases/download/v0.1_5/Utai.app.zip",
-					description: "0.1 Build 5, requires macOS 12 Monterey Beta 3+"
+					url: "https://github.com/toto-minai/Utai/releases/download/v0.1_8/Utai.0.1.dmg",
+					description: "0.1 Build 8, requires macOS 12 Monterey"
 				},
 				legacy: {
 					url: "https://github.com/toto-minai/Utai/releases/download/v0.1_4/Utai.app.zip",
-					description: "Build 4"
+					description: ""
 				}
 			}
 		}
@@ -56,9 +56,6 @@ app.component('download', {
         <a v-bind:href="latest.url">
             Download Latest
         </a> ({{ latest.description }}) / 
-        <a v-bind:href="legacy.url">
-            Download Legacy
-        </a> ({{ legacy.description }}) / 
         <a href="https://github.com/toto-minai/utai">View Source</a>
     </p>
 </div>
