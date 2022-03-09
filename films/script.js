@@ -37,6 +37,8 @@ fetch(JSON_URL)
 
 
             tbody.appendChild(tr)
+
+            document.body.style.background = 'var(--theme-gradient)'
         })
     )
 
