@@ -23,7 +23,7 @@
 }
 
 body {
-	background: var(--theme-gradient);
+	background: var(--theme);
 	color: var(--foreground-color);
 
 	padding: 4.2rem;
